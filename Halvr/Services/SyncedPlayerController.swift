@@ -11,9 +11,12 @@ final class SyncedPlayerController {
     private(set) var currentTime: Double = 0
     private(set) var duration: Double = 0
 
-    private var timeObserver: Any?
+    /// Maximum allowed drift (in seconds) between leader and follower before re-syncing.
+    private static let maxSyncDrift: Double = 0.05
+
+    private nonisolated(unsafe) var timeObserver: Any?
     private var syncTask: Task<Void, Never>?
-    private var endObserver: NSObjectProtocol?
+    private nonisolated(unsafe) var endObserver: NSObjectProtocol?
 
     init(originalURL: URL, convertedURL: URL) {
         self.originalPlayer = AVPlayer(url: originalURL)
@@ -22,6 +25,17 @@ final class SyncedPlayerController {
         setupTimeObserver()
         setupEndObserver()
         loadDuration()
+    }
+
+    deinit {
+        if let timeObserver {
+            originalPlayer.removeTimeObserver(timeObserver)
+        }
+        if let endObserver {
+            NotificationCenter.default.removeObserver(endObserver)
+        }
+        originalPlayer.pause()
+        convertedPlayer.pause()
     }
 
     // MARK: - Lifecycle
@@ -122,7 +136,7 @@ final class SyncedPlayerController {
         let leaderTime = originalPlayer.currentTime()
         let followerTime = convertedPlayer.currentTime()
         let diff = abs(CMTimeGetSeconds(leaderTime) - CMTimeGetSeconds(followerTime))
-        if diff > 0.05 {
+        if diff > Self.maxSyncDrift {
             convertedPlayer.seek(
                 to: leaderTime,
                 toleranceBefore: .zero,

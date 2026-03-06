@@ -3,11 +3,14 @@ import SwiftUI
 struct QualityMetricsView: View {
     let url: URL
     @State private var metadata: VideoMetadata?
+    @State private var loadFailed = false
 
     var body: some View {
         Group {
             if let metadata {
                 metricsContent(metadata)
+            } else if loadFailed {
+                failedContent
             } else {
                 ProgressView()
                     .scaleEffect(0.5)
@@ -29,7 +32,16 @@ struct QualityMetricsView: View {
         .font(.caption2)
         .padding(8)
         .background(.ultraThinMaterial)
-        .cornerRadius(8)
+        .clipShape(RoundedRectangle(cornerRadius: 8))
+    }
+
+    private var failedContent: some View {
+        Text("--")
+            .font(.caption2)
+            .foregroundStyle(.secondary)
+            .padding(8)
+            .background(.ultraThinMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 
     private func metricRow(_ label: String, _ value: String) -> some View {
@@ -46,6 +58,11 @@ struct QualityMetricsView: View {
 
     private func loadMetadata() async {
         let reader = VideoMetadataReader()
-        metadata = try? await reader.read(from: url)
+        do {
+            metadata = try await reader.read(from: url)
+            loadFailed = false
+        } catch {
+            loadFailed = true
+        }
     }
 }

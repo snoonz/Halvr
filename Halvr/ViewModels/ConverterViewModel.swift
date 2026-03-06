@@ -9,7 +9,7 @@ final class ConverterViewModel {
     private(set) var queueItems: [QueueItem] = []
     private(set) var isProcessing = false
     var settings: ConversionSettings = .load()
-    var compareItem: CompareItem?
+    private(set) var compareItem: CompareItem?
 
     private let converter: any VideoConverting
     private let metadataReader: any VideoMetadataReading

@@ -3,6 +3,7 @@ import SwiftUI
 struct CompareWindowView: View {
     let viewModel: ConverterViewModel
     @State private var controller: SyncedPlayerController?
+    @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         Group {
@@ -18,7 +19,7 @@ struct CompareWindowView: View {
         .frame(minWidth: 640, minHeight: 400)
         .focusable()
         .preferredColorScheme(.dark)
-        .onChange(of: viewModel.compareItem) { _, newItem in
+        .onChange(of: viewModel.compareItem, initial: true) { _, newItem in
             controller?.cleanup()
             if let newItem {
                 controller = SyncedPlayerController(
@@ -29,36 +30,33 @@ struct CompareWindowView: View {
                 controller = nil
             }
         }
-        .onAppear {
-            if let item = viewModel.compareItem {
-                controller = SyncedPlayerController(
-                    originalURL: item.originalURL,
-                    convertedURL: item.convertedURL
-                )
-            }
-        }
         .onDisappear {
             controller?.cleanup()
             controller = nil
         }
         .onKeyPress(.space) {
-            controller?.togglePlayPause()
+            guard let controller else { return .ignored }
+            controller.togglePlayPause()
             return .handled
         }
         .onKeyPress(.leftArrow) {
-            controller?.skip(by: -10)
+            guard let controller else { return .ignored }
+            controller.skip(by: -10)
             return .handled
         }
         .onKeyPress(.rightArrow) {
-            controller?.skip(by: 10)
+            guard let controller else { return .ignored }
+            controller.skip(by: 10)
             return .handled
         }
         .onKeyPress(.downArrow) {
-            controller?.skip(by: -60)
+            guard let controller else { return .ignored }
+            controller.skip(by: -60)
             return .handled
         }
         .onKeyPress(.upArrow) {
-            controller?.skip(by: 60)
+            guard let controller else { return .ignored }
+            controller.skip(by: 60)
             return .handled
         }
         .onKeyPress(characters: CharacterSet(charactersIn: "qQ")) { _ in
@@ -66,8 +64,6 @@ struct CompareWindowView: View {
             return .handled
         }
     }
-
-    @Environment(\.dismiss) private var dismiss
 
     private var emptyState: some View {
         VStack(spacing: 8) {
