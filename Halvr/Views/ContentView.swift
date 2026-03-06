@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var viewModel = ConverterViewModel()
+    let viewModel: ConverterViewModel
     @State private var showSettings = false
 
     private var hasQueueItems: Bool {

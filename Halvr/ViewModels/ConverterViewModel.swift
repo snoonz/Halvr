@@ -9,6 +9,7 @@ final class ConverterViewModel {
     private(set) var queueItems: [QueueItem] = []
     private(set) var isProcessing = false
     var settings: ConversionSettings = .load()
+    private(set) var compareItem: CompareItem?
 
     private let converter: any VideoConverting
     private let metadataReader: any VideoMetadataReading
@@ -97,6 +98,11 @@ final class ConverterViewModel {
 
     func revealInFinder(urls: [URL]) {
         NSWorkspace.shared.activateFileViewerSelecting(urls)
+    }
+
+    func requestCompare(for item: QueueItem) {
+        guard case .completed(let outputURL) = item.status else { return }
+        compareItem = CompareItem(from: item, outputURL: outputURL)
     }
 
     // MARK: - Private

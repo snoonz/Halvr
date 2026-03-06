@@ -1,166 +1,6 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Convert Video" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ビデオを変換"
-          }
-        }
-      }
-    },
-    "Drag files or\nopen to convert" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ファイルをドラッグまたは\n開いて変換"
-          }
-        }
-      }
-    },
-    "Cancel" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "キャンセル"
-          }
-        }
-      }
-    },
-    "Clear" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "クリア"
-          }
-        }
-      }
-    },
-    "Done" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "完了"
-          }
-        }
-      }
-    },
-    "Settings" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "設定"
-          }
-        }
-      }
-    },
-    "Encoder" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エンコーダ"
-          }
-        }
-      }
-    },
-    "Quality" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "画質"
-          }
-        }
-      }
-    },
-    "Close" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "閉じる"
-          }
-        }
-      }
-    },
-    "Hardware (Fast)" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ハードウェア（高速）"
-          }
-        }
-      }
-    },
-    "Software (High Quality)" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ソフトウェア（高品質）"
-          }
-        }
-      }
-    },
-    "High Quality" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "高品質"
-          }
-        }
-      }
-    },
-    "Standard" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "標準"
-          }
-        }
-      }
-    },
-    "Small Size" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "小サイズ"
-          }
-        }
-      }
-    },
-    "Cancelled by user." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ユーザーによりキャンセルされました。"
-          }
-        }
-      }
-    },
-    "Unsupported Format" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "非対応形式"
-          }
-        }
-      }
-    },
     "%@ format is not supported." : {
       "localizations" : {
         "ja" : {
@@ -171,12 +11,12 @@
         }
       }
     },
-    "Conversion Not Needed" : {
+    "%lld%%" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "変換不要"
+            "value" : "%lld%%"
           }
         }
       }
@@ -191,82 +31,32 @@
         }
       }
     },
-    "Load Failed" : {
+    "Bitrate" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "読み込み失敗"
+            "value" : "ビットレート"
           }
         }
       }
     },
-    "Conversion Failed" : {
+    "Cancel" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "変換失敗"
+            "value" : "キャンセル"
           }
         }
       }
     },
-    "Cannot read input video file." : {
+    "Cancelled by user." : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "入力動画ファイルを読み込めません。"
-          }
-        }
-      }
-    },
-    "No video track found." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "動画トラックが見つかりません。"
-          }
-        }
-      }
-    },
-    "Export failed: %@" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エクスポートに失敗しました: %@"
-          }
-        }
-      }
-    },
-    "This video is already encoded in HEVC." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "この動画は既にHEVCでエンコードされています。"
-          }
-        }
-      }
-    },
-    "Conversion was cancelled." : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "変換がキャンセルされました。"
-          }
-        }
-      }
-    },
-    "ffmpeg not found. Install via Homebrew: brew install ffmpeg" : {
-      "localizations" : {
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "ffmpegが見つかりません。Homebrewでインストールしてください: brew install ffmpeg"
+            "value" : "ユーザーによりキャンセルされました。"
           }
         }
       }
@@ -281,6 +71,147 @@
         }
       }
     },
+    "Cannot read input video file." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入力動画ファイルを読み込めません。"
+          }
+        }
+      }
+    },
+    "Clear" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリア"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
+          }
+        }
+      }
+    },
+    "Codec" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "コーデック"
+          }
+        }
+      }
+    },
+    "Compare" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "比較"
+          }
+        }
+      }
+    },
+    "Conversion Failed" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変換失敗"
+          }
+        }
+      }
+    },
+    "Conversion Not Needed" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変換不要"
+          }
+        }
+      }
+    },
+    "Conversion was cancelled." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変換がキャンセルされました。"
+          }
+        }
+      }
+    },
+    "Convert Video" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ビデオを変換"
+          }
+        }
+      }
+    },
+    "Converted (HEVC)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変換済み (HEVC)"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "extractionState" : "stale",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
+        }
+      }
+    },
+    "Drag files or\nopen to convert" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルをドラッグまたは\n開いて変換"
+          }
+        }
+      }
+    },
+    "Encoder" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エンコーダ"
+          }
+        }
+      }
+    },
+    "Export failed: %@" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エクスポートに失敗しました: %@"
+          }
+        }
+      }
+    },
     "Failed to start ffmpeg: %@" : {
       "localizations" : {
         "ja" : {
@@ -291,12 +222,92 @@
         }
       }
     },
-    "Unknown error" : {
+    "ffmpeg not found. Install via Homebrew: brew install ffmpeg" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "不明なエラー"
+            "value" : "ffmpegが見つかりません。Homebrewでインストールしてください: brew install ffmpeg"
+          }
+        }
+      }
+    },
+    "Hardware (Fast)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ハードウェア（高速）"
+          }
+        }
+      }
+    },
+    "High Quality" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高品質"
+          }
+        }
+      }
+    },
+    "Load Failed" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込み失敗"
+          }
+        }
+      }
+    },
+    "No video selected for comparison" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "比較する動画が選択されていません"
+          }
+        }
+      }
+    },
+    "No video track found." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動画トラックが見つかりません。"
+          }
+        }
+      }
+    },
+    "Original" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オリジナル"
+          }
+        }
+      }
+    },
+    "Pause" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "一時停止"
+          }
+        }
+      }
+    },
+    "Play" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "再生"
           }
         }
       }
@@ -311,12 +322,132 @@
         }
       }
     },
-    "%lld%%" : {
+    "Quality" : {
       "localizations" : {
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "%lld%%"
+            "value" : "画質"
+          }
+        }
+      }
+    },
+    "Quality Metrics" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "品質メトリクス"
+          }
+        }
+      }
+    },
+    "Resolution" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "解像度"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        }
+      }
+    },
+    "Size" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サイズ"
+          }
+        }
+      }
+    },
+    "Small Size" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小サイズ"
+          }
+        }
+      }
+    },
+    "Software (High Quality)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソフトウェア（高品質）"
+          }
+        }
+      }
+    },
+    "Standard" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "標準"
+          }
+        }
+      }
+    },
+    "Step Backward" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1フレーム戻る"
+          }
+        }
+      }
+    },
+    "Step Forward" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1フレーム進む"
+          }
+        }
+      }
+    },
+    "This video is already encoded in HEVC." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この動画は既にHEVCでエンコードされています。"
+          }
+        }
+      }
+    },
+    "Unknown error" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不明なエラー"
+          }
+        }
+      }
+    },
+    "Unsupported Format" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非対応形式"
           }
         }
       }

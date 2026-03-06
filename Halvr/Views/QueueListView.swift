@@ -2,6 +2,7 @@ import SwiftUI
 
 struct QueueListView: View {
     let viewModel: ConverterViewModel
+    @Environment(\.openWindow) private var openWindow
 
     private var hasFinishedItems: Bool {
         viewModel.queueItems.contains { item in
@@ -21,7 +22,11 @@ struct QueueListView: View {
                     ForEach(viewModel.queueItems) { item in
                         QueueItemRow(
                             item: item,
-                            onRemove: { viewModel.removeItem(id: item.id) }
+                            onRemove: { viewModel.removeItem(id: item.id) },
+                            onCompare: {
+                                viewModel.requestCompare(for: item)
+                                openWindow(id: "compare")
+                            }
                         )
                     }
                 }
@@ -58,6 +63,7 @@ struct QueueListView: View {
 private struct QueueItemRow: View {
     let item: QueueItem
     let onRemove: () -> Void
+    let onCompare: () -> Void
 
     var body: some View {
         HStack(spacing: 8) {
@@ -116,9 +122,13 @@ private struct QueueItemRow: View {
                 .foregroundStyle(.secondary)
                 .monospacedDigit()
         case .completed:
-            Text("Done")
-                .font(.caption2)
-                .foregroundStyle(.green)
+            Button(action: onCompare) {
+                Image(systemName: "rectangle.split.2x1")
+                    .font(.caption2)
+                    .foregroundStyle(.blue)
+            }
+            .buttonStyle(.borderless)
+            .help(String(localized: "Compare"))
         case .skipped(let error):
             Text(error.title)
                 .font(.caption2)
