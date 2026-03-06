@@ -1,0 +1,326 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Convert Video" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ビデオを変換"
+          }
+        }
+      }
+    },
+    "Drag files or\nopen to convert" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ファイルをドラッグまたは\n開いて変換"
+          }
+        }
+      }
+    },
+    "Cancel" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "キャンセル"
+          }
+        }
+      }
+    },
+    "Clear" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "クリア"
+          }
+        }
+      }
+    },
+    "Done" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
+        }
+      }
+    },
+    "Settings" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "設定"
+          }
+        }
+      }
+    },
+    "Encoder" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エンコーダ"
+          }
+        }
+      }
+    },
+    "Quality" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画質"
+          }
+        }
+      }
+    },
+    "Close" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "閉じる"
+          }
+        }
+      }
+    },
+    "Hardware (Fast)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ハードウェア（高速）"
+          }
+        }
+      }
+    },
+    "Software (High Quality)" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ソフトウェア（高品質）"
+          }
+        }
+      }
+    },
+    "High Quality" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "高品質"
+          }
+        }
+      }
+    },
+    "Standard" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "標準"
+          }
+        }
+      }
+    },
+    "Small Size" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "小サイズ"
+          }
+        }
+      }
+    },
+    "Cancelled by user." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザーによりキャンセルされました。"
+          }
+        }
+      }
+    },
+    "Unsupported Format" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "非対応形式"
+          }
+        }
+      }
+    },
+    "%@ format is not supported." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@形式は対応していません。"
+          }
+        }
+      }
+    },
+    "Conversion Not Needed" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変換不要"
+          }
+        }
+      }
+    },
+    "Already encoded in HEVC." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "既にHEVCでエンコードされています。"
+          }
+        }
+      }
+    },
+    "Load Failed" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "読み込み失敗"
+          }
+        }
+      }
+    },
+    "Conversion Failed" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変換失敗"
+          }
+        }
+      }
+    },
+    "Cannot read input video file." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "入力動画ファイルを読み込めません。"
+          }
+        }
+      }
+    },
+    "No video track found." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動画トラックが見つかりません。"
+          }
+        }
+      }
+    },
+    "Export failed: %@" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エクスポートに失敗しました: %@"
+          }
+        }
+      }
+    },
+    "This video is already encoded in HEVC." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この動画は既にHEVCでエンコードされています。"
+          }
+        }
+      }
+    },
+    "Conversion was cancelled." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "変換がキャンセルされました。"
+          }
+        }
+      }
+    },
+    "ffmpeg not found. Install via Homebrew: brew install ffmpeg" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ffmpegが見つかりません。Homebrewでインストールしてください: brew install ffmpeg"
+          }
+        }
+      }
+    },
+    "Cannot get video duration." : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "動画の長さを取得できません。"
+          }
+        }
+      }
+    },
+    "Failed to start ffmpeg: %@" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ffmpegの起動に失敗しました: %@"
+          }
+        }
+      }
+    },
+    "Unknown error" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "不明なエラー"
+          }
+        }
+      }
+    },
+    "Preserve Original Timestamp" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "元のタイムスタンプを保持"
+          }
+        }
+      }
+    },
+    "%lld%%" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld%%"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
