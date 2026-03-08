@@ -1,10 +1,13 @@
 import UniformTypeIdentifiers
 
 enum SupportedFormats {
+    static let mpeg2TransportStream = UTType("public.mpeg-2-transport-stream")!
+
     static let inputTypes: [UTType] = [
         .mpeg4Movie,
         .quickTimeMovie,
-        .appleProtectedMPEG4Video
+        .appleProtectedMPEG4Video,
+        mpeg2TransportStream
     ]
 
     static let outputType: UTType = .mpeg4Movie

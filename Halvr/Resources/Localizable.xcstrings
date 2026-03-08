@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "--" : {
+
+    },
     "%@ format is not supported." : {
       "localizations" : {
         "ja" : {
