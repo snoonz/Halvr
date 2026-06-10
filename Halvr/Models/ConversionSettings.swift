@@ -86,15 +86,20 @@ enum ExportPreset: String, CaseIterable, Identifiable, Sendable {
     }
 
     private enum VideoToolboxQuality {
-        static let high = "78"
+        static let high = "60"
         static let standard = "65"
         static let small = "55"
     }
 
     private enum X265CRF {
-        static let high = "23"
-        static let standard = "28"
-        static let small = "32"
+        static let high = "21"
+        static let standard = "23"
+        static let small = "25"
+    }
+    
+    private enum X265Preset {
+        static let medium = "medium"
+        static let fast = "fast"
     }
 
     func qualityArguments(for encoder: EncoderType) -> [String] {
@@ -112,7 +117,12 @@ enum ExportPreset: String, CaseIterable, Identifiable, Sendable {
             case .standard: X265CRF.standard
             case .smallSize: X265CRF.small
             }
-            return ["-crf", crf, "-preset", "medium"]
+            let preset: String = switch self {
+            case .highQuality: X265Preset.medium
+            case .standard: X265Preset.fast
+            case .smallSize: X265Preset.fast
+            }
+            return ["-crf", crf, "-preset", preset]
         }
     }
 }
